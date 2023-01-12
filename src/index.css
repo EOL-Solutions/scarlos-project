@@ -1,0 +1,114 @@
+@import url('https://fonts.cdnfonts.com/css/avenir-lt-std');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p, h1, h2, h3, h4, h5 ,h6, small{
+  font-family: 'Avenir LT Std', sans-serif;
+  color: white;
+
+}
+small{
+  font-size: 0.625rem;
+  font-weight: 350;
+}
+p{
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 14px;
+}
+h1, h2, h3, h4, h5 ,h6{
+  font-weight: 700;
+}
+h1{
+  font-size: 2.5rem;
+  letter-spacing: -2px;
+  line-height: 48px;
+  font-weight: 750;
+}
+h2,h3{
+  font-size: 2.188rem;
+  line-height: 42px;
+}
+h3{
+  font-weight: 400;
+}
+h4{
+  font-size: 0.938rem;
+  line-height: 18px;
+}
+h2{
+  font-weight: bolder;
+}
+.custom-container{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 5em 2em 4.25em 2em;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 768px) {
+  h1{
+    font-size: 3.75rem;
+    line-height: 72px;
+  }
+  p{
+    font-size: 0.75rem;
+    line-height: 14px;
+  }
+  h2,h3{
+    font-size: 2.5rem;
+    line-height: 48px;
+  }
+} 
+
+@media only screen and (min-width: 1024px) {
+  h1{
+    font-size: 5rem;
+    line-height:96px;
+  }
+  p{
+    font-size: 1rem;
+    line-height: 19px;
+  }
+  .custom-container{
+    display: grid;
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    padding: 5em 0 4.25em 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+} 
+
+@media only screen and (min-width: 1280px) {
+  h1{
+    font-size: 6.25rem;
+    line-height: 120px;
+  }
+  h2,h3{
+    font-size: 3.125rem;
+    line-height: 48px;
+  }
+} 
+@media only screen and (min-width: 1536px) {
+  
+}
