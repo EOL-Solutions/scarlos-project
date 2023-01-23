@@ -7,7 +7,7 @@
 
 body {
   margin: 0;
-  background-color: black;
+  background-color: #E2E1DB;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -20,10 +20,9 @@ code {
     monospace;
 }
 
-p, h1, h2, h3, h4, h5 ,h6, small{
+ul, label, p, h1, h2, h3, h4, h5 ,h6, small{
   font-family: 'Avenir LT Std', sans-serif;
   color: white;
-
 }
 small{
   font-size: 0.625rem;
@@ -60,9 +59,31 @@ h2{
 .custom-container{
   display: grid;
   width: 100%;
-  height: 100%;
   padding: 5em 2em 4.25em 2em;
   box-sizing: border-box;
+}
+.custom-input , .custom-area{
+  outline: none;
+  border: 0.5px solid white;
+  border-radius: 0.25rem;
+  background-color: #e2e1db5d;
+  color: white;
+  padding:8px 12px;
+}
+.transparent-btn{
+  background-color: transparent;
+  border: 0.5px solid white;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  color: white;
+  padding: 0.75em 1.25em;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 14px;
+  cursor: pointer;
+}
+.custom-area{
+  resize: none;
 }
 @media only screen and (min-width: 768px) {
   h1{
@@ -92,10 +113,12 @@ h2{
     display: grid;
     width: 100%;
     max-width: 960px;
-    height: 100%;
     padding: 5em 0 4.25em 0;
     margin: 0 auto;
     box-sizing: border-box;
+  }
+  .custom-input , .custom-area{
+    padding:8px 12px;
   }
 } 
 
