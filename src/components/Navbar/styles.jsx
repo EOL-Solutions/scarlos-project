@@ -12,7 +12,7 @@ export const Header = styled.header`
   align-items: center;
   ${animationSwipe({ time: '0.5s' })}
   transition: all 0.3s ease-in-out;
- ${props => props.showFixed && css`
+  ${props => props.showFixed && css`
     top:0px;
     position: fixed;
     background: linear-gradient(0deg, rgba(0,0,0,0) 8%, rgba(0,0,0,0.5) 74%, rgba(0,0,0,0.6) 100%);
