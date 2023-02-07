@@ -22,6 +22,7 @@ export const Banner = styled.section`
 `
 export const CardsContainer = styled.section`
   position: relative;
+  padding-bottom: 100px;
   .grid-container{
     display: flex;
     flex-direction: row;
