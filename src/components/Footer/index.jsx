@@ -6,35 +6,40 @@ import {
   IoLogoTwitter,
   IoLogoInstagram
 } from 'react-icons/io5'
+import { BaseLeft } from '../../pages/Home/styles'
 export default function Footer () {
   // const navigate = useNavigate()
   const day = new Date().getFullYear()
   return (
-    <FooterContainer >
-      <div className='custom-container footer'>
-        <SocialBar>
-          <IoLogoInstagram color="white"/>
-          <IoLogoTwitter color="white"/>
-          <IoLogoTiktok color="white"/>
-        </SocialBar>
-        <div className='text'>
-          <ul>
-            <li>
-              Support
-            </li>
-            <li>
-              Info
-            </li>
-            <li>
-              Contacts
-            </li>
-          </ul>
-          <p>
-            <p>&copy;{day} Our Company</p>
-          </p>
-        </div>
+    <div className='relative mt-[-50px]'>
+      <BaseLeft />
+      <FooterContainer >
 
-      </div>
-    </FooterContainer>
+        <div className='custom-container footer'>
+          <SocialBar>
+            <IoLogoInstagram color="white"/>
+            <IoLogoTwitter color="white"/>
+            <IoLogoTiktok color="white"/>
+          </SocialBar>
+          <div className='text'>
+            <ul>
+              <li>
+              Support
+              </li>
+              <li>
+              Info
+              </li>
+              <li>
+              Contacts
+              </li>
+            </ul>
+            <p>
+              <p>&copy;{day} Our Company</p>
+            </p>
+          </div>
+
+        </div>
+      </FooterContainer>
+    </div>
   )
 }

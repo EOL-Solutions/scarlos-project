@@ -59,6 +59,7 @@ export const ImagesContainer = styled.section`
 export const TextSection = styled.section`
   background: #1F3541;
   position: relative;
+  padding-bottom: 100px;
   .custom-container{
     gap: 30px;
   }
